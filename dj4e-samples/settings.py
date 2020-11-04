@@ -41,11 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
 
     # Extensions - installed with pip3 / requirements.txt
-    'django_extensions', 
-    'crispy_forms',  
-    'rest_framework', 
-    'social_django',  
-    'home.apps.HomeConfig',  
+    'django_extensions',
+    'crispy_forms',
+    'rest_framework',
+    'social_django',
+    'home.apps.HomeConfig',
 
     # Sample Applications - don't copy
     'hello.apps.HelloConfig',
@@ -163,7 +163,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = '/home/meonet/static'
 # Add the settings below
 
 REST_FRAMEWORK = {
@@ -175,7 +175,7 @@ REST_FRAMEWORK = {
 
 # Configure the social login
 try:
-    from . import github_settings 
+    from . import github_settings
     SOCIAL_AUTH_GITHUB_KEY = github_settings.SOCIAL_AUTH_GITHUB_KEY
     SOCIAL_AUTH_GITHUB_SECRET = github_settings.SOCIAL_AUTH_GITHUB_SECRET
 except:
