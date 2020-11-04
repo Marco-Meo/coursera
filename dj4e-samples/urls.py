@@ -52,6 +52,7 @@ urlpatterns = [
     path('chat/', include('chat.urls')),
     path('util/', include('util.urls')),
     path('well/', include('well.urls')),
+    path('polls/', include('polls.urls')),
 ]
 
 # Serve the static HTML
