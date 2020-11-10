@@ -5,11 +5,11 @@
 {% if pic_list %}
 <ul>
   {% for pic in pic_list %}
-    <li>
-        <a href="{% url 'pics:pic_detail'  pic.id %}">{{ pic.title }}</a>
-        {% if pic.owner == user %}
-        (<a href="{% url 'pics:pic_update' pic.id %}">Edit</a> |
-        <a href="{% url 'pics:pic_delete' pic.id %}">Delete</a>)
+    <li><p>
+        <a href="{% url 'ads:detail'  ad.id %}">{{ ad.title }}</a>
+        {% if ad.owner == user %}
+        (<a href="{% url 'ads:update' ad.id %}">Edit</a> |
+{#        <a href="{% url 'ad' ad.id %}">Delete</a>)#}
         {% endif %}
         </p>
     </li>

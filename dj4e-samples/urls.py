@@ -53,6 +53,7 @@ urlpatterns = [
     path('util/', include('util.urls')),
     path('well/', include('well.urls')),
     path('polls/', include('polls.urls')),
+    path('ads/', include('ads.urls')),
 ]
 
 # Serve the static HTML

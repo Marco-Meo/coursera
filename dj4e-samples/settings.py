@@ -76,6 +76,7 @@ INSTALLED_APPS = [
     'chat.apps.ChatConfig',
     'util.apps.UtilConfig',
     'well.apps.WellConfig',
+    'ads.apps.AdsConfig',
 ]
 
 # When we get to crispy forms :)
